@@ -20,3 +20,24 @@ zcoind
 zcoin-cli
 zcoin-tx
 ```
+
+## Run `zcoind` for znode
+
+make sure you have `root` privilege.
+
+```sh
+# install dependencies
+
+apt-get update && \
+apt-get install -y software-properties-common && \
+add-apt-repository ppa:bitcoin/bitcoin -y && \
+apt-get update && \
+apt-get install -y libboost-all-dev libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libevent-pthreads-2.0-5 libevent-dev && \
+ldconfig
+``` 
+
+run `zcoind` as a user
+
+```
+zcoind -daemon
+```
