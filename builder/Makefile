@@ -4,6 +4,7 @@ build: | output
 	docker cp zcoin-builder:/zcoin/src/zcoind    ${PWD}/output/zcoind 
 	docker cp zcoin-builder:/zcoin/src/zcoin-cli ${PWD}/output/zcoin-cli 
 	docker cp zcoin-builder:/zcoin/src/zcoin-tx  ${PWD}/output/zcoin-tx 
+	docker rm zcoin-builder
 
 output:
 	mkdir -p $@
