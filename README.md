@@ -1,43 +1,41 @@
-# Zcoin Builder
+# Unofficial Znode Binary Builder for Ubuntu (with Docker)
 
-Zcoin binary build for ubuntu 
+1. **For `Zcoin` team to gather rapid feedback, no symbol is stripped and binary size is large.**
+2. If you face a crash, have an issue, or/and want to ask a question, go to [Zcoin discord channel](https://discordapp.com/invite/4FjnQ2q).
+3. This repository will be kept updated until the official release comes out.
 
-## Build Image
+## Build
 
-make sure you have `docker` installed and running.
+1. Make sure you have `docker` installed and running. Then, follow the instruction below.  
+  (Basically copy and paste. Then wait.)  
 
-```sh
-git clone https://github.com/rainbowstain/zcoin-docker
-cd zcoin-docker/builder && make
+  ```sh
+  git clone --depth 1 -b znode https://github.com/rainbowstain/zcoin-docker
+  cd zcoin-docker/builder && make
 
-# compilation will take a while. Have a cup of coffee.
-...
+  # compilation will take a while. Have a cup of coffee.
+  ...
+  ```
+2. Once completed, you'll see three executables files.
 
-cd output && ls
+  ```sh
+  cd output && ls
 
-# you'll see following three binaries to run znode
-zcoind
-zcoin-cli
-zcoin-tx
-```
+  zcoind
+  zcoin-cli
+  zcoin-tx
+  ```
 
-## Run `zcoind` for znode
+## Setup
 
-make sure you have `root` privilege.
+1. Make sure you have `root` privilege to install runtime dependencies.
 
-```sh
-# install dependencies
-
-apt-get update && \
-apt-get install -y software-properties-common && \
-add-apt-repository ppa:bitcoin/bitcoin -y && \
-apt-get update && \
-apt-get install -y libboost-all-dev libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libevent-pthreads-2.0-5 libevent-dev && \
-ldconfig
-``` 
-
-run `zcoind` as a user
-
-```
-zcoind -daemon
-```
+  ```sh
+  apt-get update && \
+  apt-get install -y software-properties-common && \
+  add-apt-repository ppa:bitcoin/bitcoin -y && \
+  apt-get update && \
+  apt-get install -y libboost-all-dev libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libevent-pthreads-2.0-5 libevent-dev libzmq3-dev && \
+  ldconfig
+  ```
+2. Setup Znode according to [the guide](https://github.com/zcoinofficial/zcoin/blob/znode/ZNODE.md).
