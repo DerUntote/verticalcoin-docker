@@ -1,2 +1,3 @@
 .DS_Store
-output/
+builder/output/
+daemon/bin/
