@@ -1,3 +1,4 @@
 .DS_Store
 builder/output/
 daemon/bin/
+/.vs/verticalcoin-docker/v15
