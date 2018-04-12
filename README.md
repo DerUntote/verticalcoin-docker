@@ -38,4 +38,4 @@
   apt-get install -y libboost-all-dev libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libevent-pthreads-2.0-5 libevent-dev libzmq3-dev && \
   ldconfig
   ```
-2. Setup Znode according to [the guide](https://github.com/verticalcoinofficial/verticalcoin/blob/vnode/ZNODE.md).
+2. Setup Vnode according to [the guide](https://github.com/DerUntote/verticalcoin/blob/master/ZNODE.md).
