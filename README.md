@@ -1,7 +1,7 @@
 # Official Verticalcoin Binary Builder for Ubuntu (with Docker)
 
 1. **For `Verticalcoin` team to gather rapid feedback, no symbol is stripped and binary size is large.**
-2. If you face a crash, have an issue, or/and want to ask a question, go to [Verticalcoin discord channel](https://discordapp.com/invite/4FjnQ2q).
+2. If you face a crash, have an issue, or/and want to ask a question, go to [Verticalcoin discord channel](COMING SOON).
 3. This repository will be kept updated until the official release comes out.
 
 ## Build
