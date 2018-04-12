@@ -1,12 +1,12 @@
 build: bin
 	cp ../builder/output/* ./bin
-	docker build -t zcoin-daemon . 
+	docker build -t verticalcoin-daemon . 
 
 bin:
 	mkdir -p $@
 
 clean:
 	rm -rf bin
-	docker rmi zcoin-daemon
+	docker rmi verticalcoin-daemon
 
 .PHONY: build

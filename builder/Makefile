@@ -1,17 +1,17 @@
 build: | output
-	docker build -t zcoin-builder . 
-	docker run --name zcoin-builder zcoin-builder 
-	docker cp zcoin-builder:/zcoin/src/zcoind    ${PWD}/output/zcoind 
-	docker cp zcoin-builder:/zcoin/src/zcoin-cli ${PWD}/output/zcoin-cli 
-	docker cp zcoin-builder:/zcoin/src/zcoin-tx  ${PWD}/output/zcoin-tx 
-	docker rm zcoin-builder
+	docker build -t verticalcoin-builder . 
+	docker run --name verticalcoin-builder verticalcoin-builder 
+	docker cp verticalcoin-builder:/verticalcoin/src/verticalcoind    ${PWD}/output/verticalcoind 
+	docker cp verticalcoin-builder:/verticalcoin/src/verticalcoin-cli ${PWD}/output/verticalcoin-cli 
+	docker cp verticalcoin-builder:/verticalcoin/src/verticalcoin-tx  ${PWD}/output/verticalcoin-tx 
+	docker rm verticalcoin-builder
 
 output:
 	mkdir -p $@
 
 clean:
 	rm -rf output
-	docker rm zcoin-builder
-	docker rmi zcoin-builder
+	docker rm verticalcoin-builder
+	docker rmi verticalcoin-builder
 
 .PHONY: build

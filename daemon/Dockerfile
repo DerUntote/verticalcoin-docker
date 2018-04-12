@@ -1,4 +1,4 @@
-FROM zcoin-builder
+FROM verticalcoin-builder
 LABEL maintainer="https://twitter.com/StainedRainbow"
 
 RUN apt-get clean && \

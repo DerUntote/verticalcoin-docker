@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ ! -d /zcoin ]]; then
-    cd / && git clone --depth 1 -b znode https://github.com/zcoinofficial/zcoin /zcoin
+if [[ ! -d /verticalcoin ]]; then
+    cd / && git clone --depth 1 -b vnode https://github.com/DerUntote/verticalcoin-docker /verticalcoin
 fi
 
-cd /zcoin && git checkout znode && git pull origin znode && /zcoin/autogen.sh && ./configure && make
+cd /verticalcoin && git checkout vnode && git pull origin vnode && /verticalcoin/autogen.sh && ./configure && make

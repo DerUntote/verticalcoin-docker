@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
-if [[ ! -d ${HOME}/zcoin ]] || [[ ! -f ${HOME}/zcoin/zcoin.conf ]]; then
+if [[ ! -d ${HOME}/verticalcoin ]] || [[ ! -f ${HOME}/verticalcoin/verticalcoin.conf ]]; then
     RPCPW=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;)
 
-    mkdir -p ${HOME}/zcoin
+    mkdir -p ${HOME}/verticalcoin
 
-    cat <<EOM >$HOME/zcoin/zcoin.conf
-conf=\$HOME/zcoin/zcoin.conf
-datadir=\$HOME/zcoin
+    cat <<EOM >$HOME/verticalcoin/verticalcoin.conf
+conf=\$HOME/verticalcoin/verticalcoin.conf
+datadir=\$HOME/verticalcoin
 dbcache=300
 maxconnections=128
 
-rpcuser=zcoin
+rpcuser=verticalcoin
 rpcpassword=${RPCPW}
 
-seednode=sf1.zcoin.io
-seednode=sf2.zcoin.io
-seednode=london.zcoin.io
-seednode=singapore.zcoin.io
-seednode=nyc.zcoin.io
+seednode=sf1.verticalcoin.io
+seednode=sf2.verticalcoin.io
+seednode=london.verticalcoin.io
+seednode=singapore.verticalcoin.io
+seednode=nyc.verticalcoin.io
 EOM
 
 fi
