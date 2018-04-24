@@ -26,6 +26,10 @@
   verticalcoin-tx
   ```
 
+## Build QT / Win32 / Win64
+
+1. Use scripts inside the folders and collect binaries from output path.
+
 ## Setup
 
 1. Make sure you have `root` privilege to install runtime dependencies.
