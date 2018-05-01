@@ -5,7 +5,7 @@ if [[ ! -d ${HOME}/verticalcoin-bin ]] || [[ ! -f ${HOME}/verticalcoin-bin/verti
 
     mkdir    -p ${HOME}/verticalcoin-bin
     cp -f bin/* ${HOME}/verticalcoin-bin
-    cat <<EOM >$HOME/verticalcoin/verticalcoin.conf
+    cat <<EOM >$HOME/verticalcoin-bin/verticalcoin.conf
 conf=\$HOME/verticalcoin-bin/verticalcoin.conf
 datadir=\$HOME/verticalcoin-bin
 dbcache=300
