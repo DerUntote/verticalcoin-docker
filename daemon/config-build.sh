@@ -14,11 +14,18 @@ maxconnections=128
 rpcuser=verticalcoin
 rpcpassword=${RPCPW}
 
-seednode=sf1.verticalcoin.io
-seednode=sf2.verticalcoin.io
-seednode=london.verticalcoin.io
-seednode=singapore.verticalcoin.io
-seednode=nyc.verticalcoin.io
+seednode=seed1.vrtseed.ovh
+addnode=H01.vrtnode.ovh
+addnode=H02.vrtnode.ovh
+addnode=H03.vrtnode.ovh
+addnode=H04.vrtnode.ovh
+addnode=H05.vrtnode.ovh
+addnode=H06.vrtnode.ovh
+addnode=H07.vrtnode.ovh
+addnode=H08.vrtnode.ovh
+addnode=H09.vrtnode.ovh
+addnode=H10.vrtnode.ovh
+
 EOM
 
 fi
