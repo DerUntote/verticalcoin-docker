@@ -1,5 +1,5 @@
 build: bin
-	cp ../builder/output/* ./bin
+	cp ../builder-vanilla/output/* ./bin
 	docker build -t verticalcoin-daemon . 
 
 bin:
