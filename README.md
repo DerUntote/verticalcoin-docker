@@ -10,8 +10,9 @@
   (Basically copy and paste. Then wait.)  
 
   ```sh
-  git clone --depth 1 -b vnode https://github.com/DerUntote/verticalcoin-docker
-  cd verticalcoin-docker/builder && make
+  git clone --depth 1 -b vnode https://github.com/verticalcoin/verticalcoin-docker
+  cd verticalcoin-docker
+  bash build_all_verticalcoin.sh
 
   # compilation will take a while. Have a cup of coffee.
   ...
@@ -42,4 +43,4 @@
   apt-get install -y libboost-all-dev libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libevent-pthreads-2.0-5 libevent-dev libzmq3-dev && \
   ldconfig
   ```
-2. Setup Vnode according to [the guide](https://github.com/DerUntote/verticalcoin/blob/master/ZNODE.md).
+2. Setup Vnode according to [the guide](https://github.com/verticalcoin/verticalcoin/blob/master/ZNODE.md).
